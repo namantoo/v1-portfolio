@@ -26,8 +26,8 @@ const StyledHeroSection = styled.section`
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  height: 100vh;
-  padding: 0 1rem; // Consistent padding for all screen sizes
+  height: auto; // Change from 100vh to auto
+  padding-bottom: 2rem; // Add some padding at the bottom // Consistent padding for all screen sizes
   font-family: 'Inter', sans-serif;
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
