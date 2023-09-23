@@ -16,10 +16,12 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
+      {/* <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full"
-      >
+      > */}
+        <div  className="bg-tertiary p-5 rounded-xl sm:w-[300px] w-full">
+
         <div className="relative w-full ">
         <FaRegFolder size={32}  />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -47,7 +49,9 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+        </div>
+
+      {/* </Tilt> */}
     </motion.div>
   );
 };

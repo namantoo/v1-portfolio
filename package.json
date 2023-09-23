@@ -11,8 +11,8 @@
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fontsource/inter": "^5.0.8",
-    "@react-three/drei": "^5.3.4",
-    "@react-three/fiber": "^7.0.29",
+    "@react-three/drei": "^9.84.2",
+    "@react-three/fiber": "^8.14.2",
     "framer-motion": "^9.0.7",
     "maath": "^0.5.2",
     "react": "^18.2.0",
@@ -23,7 +23,7 @@
     "react-transition-group": "^4.4.5",
     "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^6.0.8",
-    "three": "^0.149.0"
+    "three": "^0.156.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
