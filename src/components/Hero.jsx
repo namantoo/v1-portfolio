@@ -82,28 +82,11 @@ const StyledHeroSection = styled.section`
     }
   }
 `;
-
-
 const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    // Simulating the delay with setTimeout
-    const timeout = setTimeout(() => setIsMounted(true), 1000);
-    return () => clearTimeout(timeout);
-  }, []);
-//   <motion.div variants={textVariant()}>
-//   <p className={styles.sectionSubText}>01</p>
-//   <h2 className={styles.sectionHeadText}>Overview.</h2>
-// </motion.div>
-
-  // const one =<p className={styles.sectionSubText}>01</p>;
-  // const two = <h2 className={styles.sectionHeadText}>Overview.</h2>;
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <p>
-     I'm a Software Engineer, specializing in building and developing  exceptional web/digital experiences. With a full-stack approach, I'm dedicated to creating accessible, innovative solutions.
-
+      I'm a Software Engineer, specializing in building and developing exceptional web/digital experiences. With a full-stack approach, I'm dedicated to creating accessible, innovative solutions.
     </p>
   );
   const five = (
@@ -114,35 +97,25 @@ const Hero = () => {
       rel="noreferrer">
       Resume
     </a>
-);
+  );
 
-
-  // const items = [ four, five];
-  const items = [ four];
+  const items = [four];
 
   return (
     <StyledContainer>
       <StyledHeroSection>
-      {/* <VerticalLineWithEmail />   */}
-{/* <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div> */}
-
-        
-        <TransitionGroup component={null}>
         <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText2}>Hi, my name is</p>
-        <h2 className={styles.sectionHeadText}>Naman.</h2>
-        <h2 className={styles.sectionHeadText}>I craft web experiences with code.</h2>
-      </motion.div>
+          <p className={styles.sectionSubText2}>Hi, my name is</p>
+          <h2 className={styles.sectionHeadText}>Naman.</h2>
+          <h2 className={styles.sectionHeadText}>I craft web experiences with code.</h2>
+        </motion.div>
 
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={1000}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
-            ))}
+        <TransitionGroup component={null}>
+          {items.map((item, i) => (
+            <CSSTransition key={i} classNames="fadeup" timeout={1000}>
+              <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
+            </CSSTransition>
+          ))}
         </TransitionGroup>
       </StyledHeroSection>
     </StyledContainer>
