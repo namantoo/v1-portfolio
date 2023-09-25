@@ -117,7 +117,8 @@ const Hero = () => {
 );
 
 
-  const items = [ four, five];
+  // const items = [ four, five];
+  const items = [ four];
 
   return (
     <StyledContainer>
