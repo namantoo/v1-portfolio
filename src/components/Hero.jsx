@@ -19,6 +19,20 @@ const StyledContainer = styled.div`
   min-height: 100vh;
   padding: 0 1rem; // Consistent padding for all screen sizes
 `;
+// Animation variants for the fade-in effect
+const fadeInVariant = {
+  hidden: {
+    opacity: 0,
+    y: -20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 
 const StyledHeroSection = styled.section`
   display: flex;

@@ -146,13 +146,14 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Aug 2022 - Present",
     points: [
-      "Played a pivotal role as part of the core engineering team, contributing to the foundational architecture and design decisions of EsportsXO's platform.",
-      "Designed and developed a comprehensive tournament management system using the MERN stack, enabling seamless organization, registration, and real-time tracking of esports events.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Developed APIs and integrations with popular streaming platforms, allowing gamers and streamers to connect their accounts, showcase live gameplay, and engage with their audience directly from the EsportsXO platform.",
-      "Established a secure authentication system using token-based mechanisms, ensuring the safety and privacy of user data on the platform.",
+      "Contributed to the foundational design and architecture of EsportsXO's platform as a core engineering team member.",
+      "Designed and developed a comprehensive tournament management system, enabling seamless organization, registration, and real-time tracking of events.",
+      "Worked closely with designers, managers, and developers to enhance product quality.",
+      "Developed APIs and integrations with popular streaming platforms, allowing gamers and streamers to connect their accounts, showcase live gameplay, and engage with their audience directly from the platform.",
+      "Implemented a token-based authentication system for user data security.",
     ],
   },
+  
   {
     title: "Software Developer Engineer",
     company_name: "C3Links",
@@ -168,7 +169,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer ",
     company_name: "Dgtg",
     icon: dgtglogo,
     iconBg: "#E6DEDD",
