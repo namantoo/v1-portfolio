@@ -138,15 +138,4 @@ const Hero = () => {
 
 export default Hero;
 
-function() {
-  var c =10;
- let e =10;
-  if (whatsup) {
-    var a = 4;
-    let b = 6;
-    console.log(e);
-  }
-  console.log(b);
-  console.log(a);
-}
 
