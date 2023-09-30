@@ -19,7 +19,7 @@ const StyledContainer = styled.div`
   min-height: 100vh;
   padding: 0 1rem; // Consistent padding for all screen sizes
 `;
-// Animation variants for the fade-in effect
+
 const fadeInVariant = {
   hidden: {
     opacity: 0,
