@@ -144,7 +144,7 @@ const experiences = [
     company_name: "EsportsXO",
     icon: xologo,
     iconBg: "#E6DEDD",
-    date: "Dec 2022 - Present",
+    date: "Jan 2023 - Present",
     points: [
       "Contributed to the foundational design and architecture of EsportsXO's platform as a core engineering team member.",
       "Designed and developed a comprehensive tournament management system, enabling seamless organization, registration, and real-time tracking of events.",
