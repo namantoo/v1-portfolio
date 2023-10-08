@@ -144,7 +144,7 @@ const experiences = [
     company_name: "EsportsXO",
     icon: xologo,
     iconBg: "#E6DEDD",
-    date: "Aug 2022 - Present",
+    date: "Dec 2022 - Present",
     points: [
       "Contributed to the foundational design and architecture of EsportsXO's platform as a core engineering team member.",
       "Designed and developed a comprehensive tournament management system, enabling seamless organization, registration, and real-time tracking of events.",
@@ -153,13 +153,25 @@ const experiences = [
       "Implemented a token-based authentication system for user data security.",
     ],
   },
-  
   {
-    title: "Software Developer Engineer",
+    title: "Full Stack Developer ",
+    company_name: "Dgtg",
+    icon: dgtglogo,
+    iconBg: "#E6DEDD",
+    date: "Mar 2022 - Jan 2033",
+    points: [
+      "Developed and optimized web applications using React, ensuring responsive design and seamless user experience.",
+      "Contributed to web enhancements for marketing campaigns.",
+      "Administered MongoDB databases, ensuring efficient data storage and retrieval.",
+      "Applied optimization techniques for faster-loading websites and improved SEO rankings.",
+    ],
+  },
+  {
+    title: "Software Developer Engineer, Founding Member",
     company_name: "C3Links",
     icon: c3logo,
     iconBg: "#383E56",
-    date: "Mar 2022 - Nov 2022",
+    date: "Feb 2022 - Dec 2022",
     points: [
       "Part of the founding engineering team at C3 Links.",
       "Built Admin Side Asset management tool using MERN stack.",
@@ -168,19 +180,7 @@ const experiences = [
       "Implemented various Token based authentication as well as wallet based authentication.",
     ],
   },
-  {
-    title: "Full Stack Developer ",
-    company_name: "Dgtg",
-    icon: dgtglogo,
-    iconBg: "#E6DEDD",
-    date: "Sep 2021 - Feb 2022",
-    points: [
-      "Developed and optimized web applications using React, ensuring responsive design and seamless user experience.",
-      "Contributed to web enhancements for marketing campaigns.",
-      "Administered MongoDB databases, ensuring efficient data storage and retrieval.",
-      "Applied optimization techniques for faster-loading websites and improved SEO rankings.",
-    ],
-  },
+  
 ];
 const books = [
   {
