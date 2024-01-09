@@ -140,7 +140,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Developer Engineer",
+    title: "Software Developer Engineer Intern",
     company_name: "EsportsXO",
     icon: xologo,
     iconBg: "#E6DEDD",
@@ -154,7 +154,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer ",
+    title: "Full Stack Developer Intern ",
     company_name: "Dgtg",
     icon: dgtglogo,
     iconBg: "#E6DEDD",
@@ -170,7 +170,7 @@ const experiences = [
     title: "Software Developer Engineer, Founding Member",
     company_name: "C3Links",
     icon: c3logo,
-    iconBg: "#383E56",
+    iconBg: "#383E56", 
     date: "Feb 2022 - Dec 2022",
     points: [
       "Part of the founding engineering team at C3 Links.",
