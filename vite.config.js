@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/',  // <-- Ensure this is correctly set
   build: {
     outDir: 'dist',
   },
@@ -14,10 +14,5 @@ export default defineConfig({
     alias: {
       '@': '/src',
     },
-  },
-  
-  // Ensure correct routing on refresh
-  define: {
-    'process.env': {},
   },
 });
