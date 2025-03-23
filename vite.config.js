@@ -6,6 +6,11 @@ export default defineConfig({
   base: '/',  // <-- Ensure this is correctly set
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   server: {
     open: true,
@@ -15,4 +20,7 @@ export default defineConfig({
       '@': '/src',
     },
   },
+  optimizeDeps: {
+    include: ['react', 'react-dom']
+  }
 });
