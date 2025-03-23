@@ -29,13 +29,14 @@ import {
 import dgtglogo from '../assets/company/dgtglogo.jpeg';
 import c3logo from '../assets/company/c3logo.jpeg';
 import xologo from '../assets/company/xologo.jpeg';
+import accenturelogo from '../assets/accenture.jpeg';
 import twitter from '../assets/twitter.svg.png';
 import githubdark from '../assets/githubdark.png';
 import linkedin from '../assets/linkedin.png';
 import dashboard from '../assets/dashboard.png';
 import overview from '../assets/overview.png';
-
-
+import reservista from '../assets/reservista_dashboard.jpeg';
+import emotions from '../assets/emotions.jpeg';
 
 export const navLinks = [
   {
@@ -140,11 +141,25 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Associate Engineer",
+    company_name: "Accenture",
+    icon: accenturelogo,
+    iconBg: "#E6DEDD",
+    date: "Aug 2024 - Present",
+    points: [
+      "Working on system operations and automation to improve efficiency and reliability.",
+      "Collaborating with teams to enhance monitoring, troubleshooting, and workflows.",
+      "Assisting in executing commands, managing configurations, and handling database-related tasks.",
+      "Investigating and resolving technical issues to ensure seamless functionality.",
+      "Contributing to process optimizations and technical improvements.",
+    ],
+  },
+  {
     title: "Software Developer Engineer Intern",
     company_name: "EsportsXO",
     icon: xologo,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - Dec 2023",
     points: [
       "Contributed to the foundational design and architecture of EsportsXO's platform as a core engineering team member.",
       "Designed and developed a comprehensive tournament management system, enabling seamless organization, registration, and real-time tracking of events.",
@@ -158,7 +173,7 @@ const experiences = [
     company_name: "Dgtg",
     icon: dgtglogo,
     iconBg: "#E6DEDD",
-    date: "Mar 2022 - Jan 2033",
+    date: "Aug 2022 - Jan 2023",
     points: [
       "Developed and optimized web applications using React, ensuring responsive design and seamless user experience.",
       "Contributed to web enhancements for marketing campaigns.",
@@ -167,7 +182,7 @@ const experiences = [
     ],
   },
   {
-    title: "Software Developer Engineer, Founding Member",
+    title: "Founding Member",
     company_name: "C3Links",
     icon: c3logo,
     iconBg: "#383E56", 
@@ -325,165 +340,103 @@ const testimonials = [
   },
 ];
 const projectsArchive = [
-  {
-    name: "AuSent",
-    description:
-      " A web app that uses advanced algorithms to analyze and determine emotions in spoken content, offering real-time insights for diverse applications.",
-    tags: [
-      {
-        name: "Python",
-        color: "",
-      },
-      {
-        name: "NodeJs",
-       color: "",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
   // {
-  //   name: "Job IT",
+  //   name: "AuSent",
   //   description:
-  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+  //     " A web app that uses advanced algorithms to analyze and determine emotions in spoken content, offering real-time insights for diverse applications.",
   //   tags: [
   //     {
-  //       name: "react",
+  //       name: "Python",
   //       color: "",
   //     },
   //     {
-  //       name: "restapi",
+  //       name: "NodeJs",
   //      color: "",
-  //     },
-  //     {
-  //       name: "scss",
-  //       color: "",
   //     },
   //   ],
-  //   image: jobit,
+  //   image: carrent,
   //   source_code_link: "https://github.com/",
   // },
-  {
-    name: "Telegram-GPT3.5",
-    description:
-      "A seamless chat-bot that bridges Telegram users with ChatGPT via the OpenAI API for real-time, intelligent conversations.",
-    tags: [
-      {
-        name: "NodeJs",
-        color: "",
-      },
-      {
-        name: "OpenAi Api",
-       color: "",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+
   // {
-  //   name: "Project 4",
+  //   name: "Telegram-GPT3.5",
   //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //     "A seamless chat-bot that bridges Telegram users with ChatGPT via the OpenAI API for real-time, intelligent conversations.",
   //   tags: [
   //     {
-  //       name: "nextjs",
+  //       name: "NodeJs",
   //       color: "",
   //     },
   //     {
-  //       name: "supabase",
+  //       name: "OpenAi Api",
   //      color: "",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "",
   //     },
   //   ],
   //   image: tripguide,
   //   source_code_link: "https://github.com/",
   // },
-  // {
-  //   name: "Project 5",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "",
-  //     },
-  //     {
-  //       name: "supabase",
-  //      color: "",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
-  // {
-  //   name: "Project 6",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "",
-  //     },
-  //     {
-  //       name: "supabase",
-  //      color: "",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // }
+ 
 ];
 
 const projects = [
+  {
+    name: "Reservista",
+    description:
+      "Reservista is a comprehensive full-stack application designed for hotel owners and managers. It offers seamless booking management with features like a real-time floor plan, roster tracking, and automated rate adjustments. Users can efficiently handle reservations, monitor room availability, and manage staff through a user-friendly interface that includes a secure login/signup system and a detailed dashboard.",
+    tags: [
+     
+    ],
+    image: reservista,
+    source_code_link: "https://reservista-development.vercel.app/login",
+  },
   {
     name: "Invx",
     description:
       "Invx is a comprehensive full-stack application designed for cryptocurrency enthusiasts. It offers seamless wallet integration with platforms like MetaMask, Rainbow, and Coinbase. Users can effortlessly add funds, invest in cryptocurrencies, and monitor transactions through a user-friendly interface that includes a secure login/signup system, a detailed dashboard",
     tags: [
-      {
-        name: "React",
-        color: "",
-      },
-      {
-        name: "NodeJS",
-       color: "",
-      },
-      {
-        name: "Web3.js",
-        color: "",
-      },
+    
+     
     ],
     image: dashboard,
     source_code_link: "https://github.com/namantoo/Invx",
   },
   {
-    name: "Transactions Monitoring API",
+    name: "EchoNava",
+    description:
+    "EchoNava is an audio sentiment analysis model designed to classify emotions from audio inputs. It processes spectrogram images using a convolutional neural network (CNN) to identify sentiments like happy, sad, angry, and neutral. The model is trained on a curated dataset of 10,000 audio clips, with preprocessing techniques applied for quality consistency. Users can load a pre-trained model and analyze sentiment.",
+    tags: [
+     
+    ],
+    image: emotions,
+    source_code_link: "https://github.com/namantoo/EchoNava-Model",
+  },
+  // {
+  //   name: "Invx",
+  //   description:
+  //     "Invx is a comprehensive full-stack application designed for cryptocurrency enthusiasts. It offers seamless wallet integration with platforms like MetaMask, Rainbow, and Coinbase. Users can effortlessly add funds, invest in cryptocurrencies, and monitor transactions through a user-friendly interface that includes a secure login/signup system, a detailed dashboard",
+  //   tags: [
+  //     {
+  //       name: "React",
+  //       color: "",
+  //     },
+  //     {
+  //       name: "NodeJS",
+  //      color: "",
+  //     },
+  //     {
+  //       name: "Web3.js",
+  //       color: "",
+  //     },
+  //   ],
+  //   image: dashboard,
+  //   source_code_link: "https://github.com/namantoo/Invx",
+  // },
+  {
+    name: "Transactions API",
     description:
       "This API offers a comprehensive suite of tools, from initiating crypto transactions and tracking investment timings to ensuring secure withdrawals and providing insights into returns and profits. With an emphasis on user experience and security, it's an essential tool for both crypto novices and experts.                           ",
     tags: [
-      {
-        name: "NodeJs",
-        color: "",
-      },
-      {
-        name: "MongoDB",
-       color: "",
-      },
-      {
-        name: "Oauth",
-        color: "",
-      },
+    
     ],
     image: overview,
     source_code_link: "https://github.com/namantoo/Transactions-Monitoring-Api",

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Tilt from "react-tilt";
+import { default as Tilt } from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -122,7 +122,7 @@ const About = () => {
               </div> */}
 
               <div>
-                <p>Here are a few technologies I’ve been working with recently:</p>
+                <p>Here are a few technologies I've been working with recently:</p>
               </div>
 
               <ul className="grid grid-cols-2 gap-2 list-disc list-inside">

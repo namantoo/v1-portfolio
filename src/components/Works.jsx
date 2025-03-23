@@ -1,4 +1,8 @@
-import Tilt from "react-tilt";
+import { default as Tilt } from "react-parallax-tilt";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -17,12 +21,8 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      {/* <Tilt
-        options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-xl sm:w-[300px] w-full"
-      > */}
-        <div  className="bg-tertiary p-5 rounded-xl sm:w-[300px] w-full">
-        <div className="relative w-full h-[230px]">
+      <div className="bg-tertiary p-5 rounded-xl h-[550px] flex flex-col">
+        <div className="relative w-full h-[200px]">
           <img
             src={image}
             alt={name}
@@ -41,28 +41,53 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <div className="mt-5 flex flex-col flex-grow">
+          <h3 className="text-white font-bold text-[24px] mb-3">{name}</h3>
+          <div className="flex-grow">
+            <p className="text-secondary text-[14px] line-clamp-7">{description}</p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+                {tag.name}
+              </p>
+            ))}
+          </div>
         </div>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-              {tag.name}
-            </p>
-          ))}
-        </div>
-        </div>
-      {/* </Tilt> */}
+      </div>
     </motion.div>
   );
 };
 
 const Works = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
+
   return (
     <section id="projects">
-    
-   
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>03. My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -79,13 +104,16 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+      <div className="mt-20">
+        <Slider {...settings} className="project-slider">
+          {projects.map((project, index) => (
+            <div key={`project-${index}`} className="px-3">
+              <ProjectCard index={index} {...project} />
+            </div>
+          ))}
+        </Slider>
       </div>
-      </section>
-
+    </section>
   );
 };
 
