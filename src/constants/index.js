@@ -142,7 +142,7 @@ const technologies = [
 const experiences = [
   {
     title: "Associate Engineer",
-    company_name: "Accenture",
+    company_name: "Navisite - Part of ACN",
     icon: accenturelogo,
     iconBg: "#E6DEDD",
     date: "Aug 2024 - Present",
