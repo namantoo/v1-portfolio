@@ -71,7 +71,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Full Stack Developer",
     icon: mobile,
   },
   {
@@ -79,7 +79,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "ML / AI Engineer",
     icon: creator,
   },
 ];
@@ -200,15 +200,14 @@ const experiences = [
 const books = [
   {
     title: "What to Think About Machines That Think",
-    company_name: "John Brockman",
+    company_name: "John Brockman (ed.)",
     icon: dgtglogo,
     iconBg: "#E6DEDD",
-    date: "Sep 2021 - Feb 2022",
+    date: "Essays & Perspectives",
     points: [
-      "Developed and optimized web applications using React, ensuring responsive design and seamless user experience.",
-      "Contributed to web enhancements for marketing campaigns.",
-      "Administered MongoDB databases, ensuring efficient data storage and retrieval.",
-      "Applied optimization techniques for faster-loading websites and improved SEO rankings.",
+      "A collection of 192 essays from the world's brightest minds on the rise of artificial intelligence.",
+      "Explores philosophical, ethical, and societal implications of thinking machines.",
+      "Covers perspectives from scientists, philosophers, and technologists on AI's future impact.",
     ],
   },
   {
@@ -216,129 +215,72 @@ const books = [
     company_name: "Sarah Bakewell",
     icon: xologo,
     iconBg: "#E6DEDD",
-    date: "Aug 2022 - Present",
+    date: "Biography / Philosophy",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "A life of Montaigne told through 20 attempts to answer the question of how to live.",
+      "Blends biography with philosophy, drawing on Montaigne's Essays for timeless wisdom.",
+      "A meditation on self-knowledge, curiosity, and the art of living well.",
     ],
   },
   {
-    title: "The Well-Tempered City: What Modern Science...",
-    company_name: "Jonathan F. P. Rose ",
+    title: "The Well-Tempered City",
+    company_name: "Jonathan F. P. Rose",
     icon: c3logo,
     iconBg: "#383E56",
-    date: "Mar 2022 - Nov 2022",
+    date: "Urban Design / Systems",
     points: [
-      "Part of the founding engineering team at C3 Links.",
-      "Built Admin Side Asset management tool using MERN stack.",
-      "Developed tools for handling huge financial data sets and APIs for big data management.",
-      "Built and maintained user side full stack decentralized web application on multiple chains using React.js, Web3.js.",
-      "Implemented various Token based authentication as well as wallet based authentication.",
+      "Explores how cities can be designed to be more equitable, resilient, and sustainable.",
+      "Draws on science, history, and social policy to propose a new framework for urban development.",
+      "Argues that well-designed cities can balance economic growth with social and environmental health.",
     ],
   },
   {
-    title: "Artificial Intelligence: A Modern Approach ",
+    title: "Artificial Intelligence: A Modern Approach",
     company_name: "Stuart J. Russell, Peter Norvig",
     icon: dgtglogo,
     iconBg: "#E6DEDD",
-    date: "Sep 2021 - Feb 2022",
+    date: "Textbook / AI",
     points: [
-      "Developed and optimized web applications using React, ensuring responsive design and seamless user experience.",
-      "Contributed to web enhancements for marketing campaigns.",
-      "Administered MongoDB databases, ensuring efficient data storage and retrieval.",
-      "Applied optimization techniques for faster-loading websites and improved SEO rankings.",
+      "The definitive textbook on artificial intelligence, covering search, logic, planning, learning, and more.",
+      "Provides a comprehensive overview of the field from foundational algorithms to modern deep learning.",
+      "Essential reading for understanding the theoretical underpinnings of AI systems.",
     ],
   },
   {
-    title: "Types and Programming Languages (Mit Press) ",
+    title: "Types and Programming Languages",
     company_name: "Benjamin C. Pierce",
     icon: dgtglogo,
     iconBg: "#E6DEDD",
-    date: "Sep 2021 - Feb 2022",
+    date: "Textbook / PL Theory",
     points: [
-      "Developed and optimized web applications using React, ensuring responsive design and seamless user experience.",
-      "Contributed to web enhancements for marketing campaigns.",
-      "Administered MongoDB databases, ensuring efficient data storage and retrieval.",
-      "Applied optimization techniques for faster-loading websites and improved SEO rankings.",
+      "A comprehensive introduction to type systems and their role in programming language design.",
+      "Covers lambda calculus, subtyping, polymorphism, and recursive types with formal rigor.",
+      "Bridges theory and practice, showing how type systems prevent errors and guide program structure.",
     ],
-  },
-]
-//Types and Programming Languages (Mit Press) 
-const social = [
-  {
-    title: "Github",
-    company_name: "Dgtg",
-    icon: githubdark,
-    iconBg: "#E6DEDD",
-    date: "Github",
-    url: "https://github.com/namantoo",
-    points: [
-      "Developed and optimized web applications using React, ensuring responsive design and seamless user experience.",
-      "Contributed to web enhancements for marketing campaigns.",
-      "Administered MongoDB databases, ensuring efficient data storage and retrieval.",
-      "Applied optimization techniques for faster-loading websites and improved SEO rankings.",
-    ],
-  },
-  // {
-  //   title: "Twitter",
-  //   company_name: "Author1",
-  //   icon: twitter,
-  //   iconBg: "#E6DEDD",
-  //   date: "Twitter",
-  //   url: "https://twitter.com/namantoo",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-  {
-    title: "Linkedin",
-    company_name: "C3Links",
-    icon: linkedin,
-    iconBg: "#383E56",
-    date: "Linkedin",
-    url: "https://www.linkedin.com/in/naman-33751713a/",
-    points: [
-      "Part of the founding engineering team at C3 Links.",
-      "Built Admin Side Asset management tool using MERN stack.",
-      "Developed tools for handling huge financial data sets and APIs for big data management.",
-      "Built and maintained user side full stack decentralized web application on multiple chains using React.js, Web3.js.",
-      "Implemented various Token based authentication as well as wallet based authentication.",
-    ],
-  },
-  
-]
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
+const social = [
+  {
+    title: "GitHub",
+    company_name: "github.com/namantoo",
+    icon: githubdark,
+    iconBg: "#E6DEDD",
+    date: "GitHub",
+    url: "https://github.com/namantoo",
+    points: [],
+  },
+  {
+    title: "LinkedIn",
+    company_name: "linkedin.com/in/naman-33751713a",
+    icon: linkedin,
+    iconBg: "#383E56",
+    date: "LinkedIn",
+    url: "https://www.linkedin.com/in/naman-33751713a/",
+    points: [],
+  },
+];
+
+const testimonials = [];
 const projectsArchive = [
   // {
   //   name: "AuSent",
@@ -384,7 +326,10 @@ const projects = [
     description:
       "Reservista is a comprehensive full-stack application designed for hotel owners and managers. It offers seamless booking management with features like a real-time floor plan, roster tracking, and automated rate adjustments. Users can efficiently handle reservations, monitor room availability, and manage staff through a user-friendly interface that includes a secure login/signup system and a detailed dashboard.",
     tags: [
-     
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "MongoDB", color: "orange-text-gradient" },
+      { name: "Express", color: "pink-text-gradient" },
     ],
     image: reservista,
     source_code_link: "https://reservista-development.vercel.app/login",
@@ -394,8 +339,9 @@ const projects = [
     description:
       "Invx is a comprehensive full-stack application designed for cryptocurrency enthusiasts. It offers seamless wallet integration with platforms like MetaMask, Rainbow, and Coinbase. Users can effortlessly add funds, invest in cryptocurrencies, and monitor transactions through a user-friendly interface that includes a secure login/signup system, a detailed dashboard",
     tags: [
-    
-     
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Web3.js", color: "orange-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
     ],
     image: dashboard,
     source_code_link: "https://github.com/namantoo/Invx",
@@ -405,7 +351,9 @@ const projects = [
     description:
     "EchoNava is an audio sentiment analysis model designed to classify emotions from audio inputs. It processes spectrogram images using a convolutional neural network (CNN) to identify sentiments like happy, sad, angry, and neutral. The model is trained on a curated dataset of 10,000 audio clips, with preprocessing techniques applied for quality consistency. Users can load a pre-trained model and analyze sentiment.",
     tags: [
-     
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "TensorFlow", color: "orange-text-gradient" },
+      { name: "CNN", color: "green-text-gradient" },
     ],
     image: emotions,
     source_code_link: "https://github.com/namantoo/EchoNava-Model",
@@ -434,9 +382,11 @@ const projects = [
   {
     name: "Transactions API",
     description:
-      "This API offers a comprehensive suite of tools, from initiating crypto transactions and tracking investment timings to ensuring secure withdrawals and providing insights into returns and profits. With an emphasis on user experience and security, it's an essential tool for both crypto novices and experts.                           ",
+      "This API offers a comprehensive suite of tools, from initiating crypto transactions and tracking investment timings to ensuring secure withdrawals and providing insights into returns and profits. With an emphasis on user experience and security, it's an essential tool for both crypto novices and experts.",
     tags: [
-    
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Express", color: "blue-text-gradient" },
+      { name: "MongoDB", color: "orange-text-gradient" },
     ],
     image: overview,
     source_code_link: "https://github.com/namantoo/Transactions-Monitoring-Api",
